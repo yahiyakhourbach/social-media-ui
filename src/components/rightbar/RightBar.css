@@ -1,3 +1,64 @@
 .RightBar {
   flex: 3;
+  position: sticky;
+  height: calc(100vh - 60px);
+  top: 60px;
+  overflow: auto;
+}
+.RightBarWrapper {
+  padding: 20px 20px 0px 0px;
+}
+.birthdaycontianer {
+  display: flex;
+  align-items: center;
+}
+.bitrthdayImg {
+  width: 42px;
+  height: 42px;
+  margin-right: 10px;
+}
+.giftText {
+  font-weight: 300;
+  font-size: 15px;
+}
+.addImg {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  margin: 10px;
+}
+.onlinefriends {
+  margin: 10px 10px;
+}
+.rightBarFriendList {
+  list-style-type: none;
+}
+.rightbarFriends {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+.friendprofilecontainer {
+  position: relative;
+}
+.friendprofileImg {
+  width: 32px;
+  height: 32px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.onlinecircle {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background-color: limegreen;
+  border-radius: 50%;
+  border: 1px solid lightgray;
+  top: -1px;
+  right: -2px;
+}
+.friendprofileText {
+  margin-left: 10px;
+  font-weight: 500;
 }

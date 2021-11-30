@@ -1,8 +1,10 @@
 .Feed {
   flex: 6;
   overflow: auto;
+  position: static;
+  top: 60px;
+  height: calc(100vh - 60px);
 }
 .feedWrapper {
   padding: 20px;
-  overflow: auto;
 }
