@@ -7,11 +7,11 @@ import {
   PlayCircleFilled,
   RssFeed,
   School,
-  VideoCall,
   WorkOutline,
 } from '@material-ui/icons';
 import './SideBar.css';
-
+import { users } from '../../DummyData';
+import Friends from '../friends/Friends';
 const SideBar = () => {
   return (
     <div className="sidebare">
@@ -57,38 +57,9 @@ const SideBar = () => {
         <button className="sidebar-btn">show more</button>
         <hr className="hrSideBar" />
         <ul className="friendlist">
-          <li className="friendlistItem">
-            <img
-              src="https://images.unsplash.com/photo-1506277886164-e25aa3f4ef7f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
-              alt=""
-              className="imgFriendSidebar"
-            />
-            <span className="friendName">jihan bikler</span>
-          </li>
-          <li className="friendlistItem">
-            <img
-              src="https://images.unsplash.com/photo-1506277886164-e25aa3f4ef7f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
-              alt=""
-              className="imgFriendSidebar"
-            />
-            <span className="friendName">jihan bikler</span>
-          </li>
-          <li className="friendlistItem">
-            <img
-              src="https://images.unsplash.com/photo-1506277886164-e25aa3f4ef7f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
-              alt=""
-              className="imgFriendSidebar"
-            />
-            <span className="friendName">jihan bikler</span>
-          </li>
-          <li className="friendlistItem">
-            <img
-              src="https://images.unsplash.com/photo-1506277886164-e25aa3f4ef7f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
-              alt=""
-              className="imgFriendSidebar"
-            />
-            <span className="friendName">jihan bikler</span>
-          </li>
+          {users.map((user) => (
+            <Friends key={user.id} user={user} />
+          ))}
         </ul>
       </div>
     </div>

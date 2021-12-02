@@ -1,0 +1,12 @@
+.imgFriendSidebar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 10px;
+}
+.friendlistItem {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
