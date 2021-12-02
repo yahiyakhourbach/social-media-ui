@@ -33,32 +33,3 @@
 .rightBarFriendList {
   list-style-type: none;
 }
-.rightbarFriends {
-  display: flex;
-  align-items: center;
-  margin-left: 10px;
-  margin-top: 10px;
-}
-.friendprofilecontainer {
-  position: relative;
-}
-.friendprofileImg {
-  width: 32px;
-  height: 32px;
-  object-fit: cover;
-  border-radius: 50%;
-}
-.onlinecircle {
-  position: absolute;
-  width: 12px;
-  height: 12px;
-  background-color: limegreen;
-  border-radius: 50%;
-  border: 1px solid lightgray;
-  top: -1px;
-  right: -2px;
-}
-.friendprofileText {
-  margin-left: 10px;
-  font-weight: 500;
-}

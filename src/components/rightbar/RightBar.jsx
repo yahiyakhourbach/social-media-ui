@@ -1,5 +1,6 @@
 import './RightBar.css';
-
+import { users } from '../../DummyData';
+import OnlineFriends from '../onlineFriends/OnlineFriends';
 const RightBar = () => {
   return (
     <div className="RightBar">
@@ -17,50 +18,9 @@ const RightBar = () => {
         />
         <h4 className="onlinefriends">online Friends</h4>
         <ul className="rightBarFriendList">
-          <li className="rightbarFriends">
-            <div className="friendprofilecontainer">
-              <img
-                src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=388&q=80"
-                alt=""
-                className="friendprofileImg"
-              />
-              <div className="onlinecircle"></div>
-            </div>
-            <span className="friendprofileText">karla johnson</span>
-          </li>
-          <li className="rightbarFriends">
-            <div className="friendprofilecontainer">
-              <img
-                src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=388&q=80"
-                alt=""
-                className="friendprofileImg"
-              />
-              <div className="onlinecircle"></div>
-            </div>
-            <span className="friendprofileText">karla johnson</span>
-          </li>
-          <li className="rightbarFriends">
-            <div className="friendprofilecontainer">
-              <img
-                src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=388&q=80"
-                alt=""
-                className="friendprofileImg"
-              />
-              <div className="onlinecircle"></div>
-            </div>
-            <span className="friendprofileText">karla johnson</span>
-          </li>
-          <li className="rightbarFriends">
-            <div className="friendprofilecontainer">
-              <img
-                src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=388&q=80"
-                alt=""
-                className="friendprofileImg"
-              />
-              <div className="onlinecircle"></div>
-            </div>
-            <span className="friendprofileText">karla johnson</span>
-          </li>
+          {users.map((user) => (
+            <OnlineFriends key={user.id} user={user} />
+          ))}
         </ul>
       </div>
     </div>
