@@ -1,5 +1,7 @@
 import { AddCircle, Edit, MoreHoriz } from '@material-ui/icons';
 import IntroProfile from '../../components/introprofile/IntroProfile';
+import ProfileFriends from '../../components/profileFriends/ProfileFriends';
+import ProfilePhotos from '../../components/ProfilePhotos/ProfilePhotos';
 import SideBar from '../../components/SideBar/SideBar';
 import TopBar from '../../components/Topbar/TopBar';
 import './Profile.css';
@@ -78,6 +80,8 @@ const Profile = () => {
           <div className="profilecontentwrapper">
             <div className="left-bar-content">
               <IntroProfile />
+              <ProfilePhotos />
+              <ProfileFriends />
             </div>
             <div className="right-bar-content"></div>
           </div>

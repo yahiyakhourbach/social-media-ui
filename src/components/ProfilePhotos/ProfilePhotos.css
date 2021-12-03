@@ -1,0 +1,28 @@
+.profile-photos {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 7px;
+}
+.photos-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5px 0px;
+}
+
+.photos-conatianer {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  border-radius: 20px;
+  width: 100%;
+  margin-top: 20px;
+}
+.profile-photos-gall {
+  width: 100px;
+  height: 100px;
+  margin: 0px 0px 5px 5px;
+}
+.title-link-photos {
+  color: #4986db;
+}
