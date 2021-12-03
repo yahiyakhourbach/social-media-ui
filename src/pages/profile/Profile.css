@@ -109,13 +109,24 @@
   padding: 10px 40px;
   display: flex;
   background-color: #f0f2f5;
+  height: 100vh;
+  overflow: auto;
 }
 .left-bar-content {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
   flex: 3.5;
+  overflow: auto;
 }
 .right-bar-content {
   flex: 5.5;
+  padding: 0px 10px;
+  overflow: auto;
+}
+::-webkit-scrollbar {
+  width: 0px;
+}
+::-webkit-scrollbar {
+  display: none;
 }

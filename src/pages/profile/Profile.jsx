@@ -4,6 +4,9 @@ import ProfileFriends from '../../components/profileFriends/ProfileFriends';
 import ProfilePhotos from '../../components/ProfilePhotos/ProfilePhotos';
 import SideBar from '../../components/SideBar/SideBar';
 import TopBar from '../../components/Topbar/TopBar';
+import Share from '../../components/Share/Share';
+import Post from '../../components/Post/Post';
+import { posts } from '../../DummyData';
 import './Profile.css';
 
 const Profile = () => {
@@ -83,7 +86,12 @@ const Profile = () => {
               <ProfilePhotos />
               <ProfileFriends />
             </div>
-            <div className="right-bar-content"></div>
+            <div className="right-bar-content">
+              <Share />
+              {posts.map((post) => (
+                <Post key={post.id} post={post} />
+              ))}
+            </div>
           </div>
         </div>
       </div>
