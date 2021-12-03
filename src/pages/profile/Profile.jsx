@@ -1,4 +1,5 @@
-import { AddCircle, Edit } from '@material-ui/icons';
+import { AddCircle, Edit, MoreHoriz } from '@material-ui/icons';
+import IntroProfile from '../../components/introprofile/IntroProfile';
 import SideBar from '../../components/SideBar/SideBar';
 import TopBar from '../../components/Topbar/TopBar';
 import './Profile.css';
@@ -45,6 +46,40 @@ const Profile = () => {
               </div>
             </div>
             <hr className="hrProfile" />
+            <div className="bottomProfile">
+              <ul className="profileLinks">
+                <li tabindex="0" className="profileLinkItem">
+                  Posts
+                </li>
+                <li tabindex="0" className="profileLinkItem">
+                  About
+                </li>
+                <li tabindex="0" className="profileLinkItem">
+                  Friends
+                </li>
+                <li tabindex="0" className="profileLinkItem">
+                  Photos
+                </li>
+                <li tabindex="0" className="profileLinkItem">
+                  Videos
+                </li>
+                <li tabindex="0" className="profileLinkItem">
+                  Check-Ins
+                </li>
+                <li tabindex="0" className="profileLinkItem">
+                  more
+                </li>
+              </ul>
+              <div className="morecontianer">
+                <MoreHoriz />
+              </div>
+            </div>
+          </div>
+          <div className="profilecontentwrapper">
+            <div className="left-bar-content">
+              <IntroProfile />
+            </div>
+            <div className="right-bar-content"></div>
           </div>
         </div>
       </div>
